@@ -31,7 +31,7 @@ const activeArticles = document.querySelectorAll('.articles a.active');
 const articleSelector = clickedElement.getAttribute ('href');
   console.log (articleSelector);
   /* [IN PROGRESS] find the correct article using the selector (value of 'href' attribute) */
-const targetArticle = querySelector ('href');
+const targetArticle = clickedElement.querySelector ('href');
   console.log (targetArticle);
 
   /* add class 'active' to the correct article */
