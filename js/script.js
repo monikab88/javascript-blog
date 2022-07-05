@@ -30,11 +30,15 @@ const activeArticles = document.querySelectorAll('.articles a.active');
   /* [DONE] get 'href' attribute from the clicked link */
 const articleSelector = clickedElement.getAttribute ('href');
   console.log (articleSelector);
-  /* [IN PROGRESS] find the correct article using the selector (value of 'href' attribute) */
+  /* [DONE] find the correct article using the selector (value of 'href' attribute) */
 const targetArticle = document.querySelector (articleSelector);
   console.log (targetArticle);
 
   /* add class 'active' to the correct article */
+  console.log(targetArticle);
+
+  targetArticle.classList.add('active');
+
 }
 
 const links = document.querySelectorAll('.titles a');
