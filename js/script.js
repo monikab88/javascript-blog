@@ -6,7 +6,7 @@
 
 const titleClickHandler = function(event){
   const clickedElement = this;
-  console.log('Link was clicked!', event);
+  console.log('Link was clicked!');
   event.preventDefault();
 
   /* [DONE] remove class 'active' from all article links  */
@@ -30,7 +30,7 @@ const activeArticles = document.querySelectorAll('.articles a.active');
 
   /* [IN PROGRESS] get 'href' attribute from the clicked link */
 const articleSelector = clickedElement.getAttribute ('.href');
-console.log (articleSelector);
+console.log ('articleSelector');
   /* find the correct article using the selector (value of 'href' attribute) */
 
   /* add class 'active' to the correct article */
