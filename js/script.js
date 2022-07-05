@@ -19,7 +19,7 @@ const activeLinks = document.querySelectorAll('.titles a.active');
 
   console.log('clickedElement (with plus): ' + clickedElement);
 
-      clickedElement.classList.add('active');
+      clickedElement.add('active');
   /* [DONE] remove class 'active' from all articles */
 const activeArticles = document.querySelectorAll('.articles a.active');
 
