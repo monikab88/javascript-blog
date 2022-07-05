@@ -5,7 +5,7 @@
 */
 
 const titleClickHandler = function(event){
-  console.log(event);
+  console.log(event,'Link was clicked!');
 
   /* remove class 'active' from all article links  */
 
