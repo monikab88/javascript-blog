@@ -21,7 +21,7 @@ const activeLinks = document.querySelectorAll('.titles a.active');
 
   clickedElement.classList.add('active');
   /* [DONE] remove class 'active' from all articles */
-const activeArticles = document.querySelectorAll('articles a.active');
+const activeArticles = document.querySelectorAll('article');
 
   for(let activeArticle of activeArticles){
     activeArticle.classList.remove('active');
