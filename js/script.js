@@ -56,30 +56,29 @@ function generateTitleLinks(){
 
   const titleList = document.querySelector(optTitleListSelector);
   titleList.innerHTML='';
-  const articles=document.querySelectorAll(optArticleSelector+customSelector);
-  let html='';
-  for(const article of articles){
-    const articleId=article.id;
-  }
+  
   /* remove contents of titleList */
   function clearMessages(){
     document.getElementById('messages').innerHTML = '';
   }
-  
-  /* for each article */
-  const articleTitle = article.querySelector(optTitleSelector).innerHTML;
-    /* get the article id */
-
+   /* for each article */
+  /* get the article id */
+    const articles=document.querySelectorAll(optArticleSelector+customSelector);
+    let html='';
+    for(const article of articles){
+      const articleId=article.id;
+    
     /* find the title element */
-
     /* get the title from the title element */
-
+    const articleTitle = article.querySelector(optTitleSelector).innerHTML;
     /* create HTML of the link */
-
+    const linkHTML = '<li><a href="#' + articleId + '"><span>' + articleTitle + '</span></a></li>';
+    console.log(linkHTML);
     /* insert link into titleList */
-
+    html = html + linkHTML;
 }
-
+titleList.innerHTML = html;
+}
+}
 generateTitleLinks();
 
-}
