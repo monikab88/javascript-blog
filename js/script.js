@@ -1,4 +1,4 @@
-/* document.getElementById('test-button').addEventListener('click', function(){
+{/* document.getElementById('test-button').addEventListener('click', function(){
     const links = document.querySelectorAll('.titles a');
     console.log('links:', links);
   }); 
@@ -43,6 +43,38 @@ const targetArticle = document.querySelector (articleSelector);
 
 const links = document.querySelectorAll('.titles a');
 
-for(let link of links){
-  link.addEventListener('click', titleClickHandler);
+  for(let link of links){
+    link.addEventListener('click', titleClickHandler);
+  }
+
+
+const optArticleSelector = '.post',
+  optTitleSelector = '.post-title',
+  optTitleListSelector = '.titles';
+
+function generateTitleLinks(){
+
+  const titleList = document.querySelector(optTitleListSelector);
+  titleList.innerHTML='';
+  /* remove contents of titleList */
+  function clearMessages(){
+    document.getElementById('messages').innerHTML = '';
+  }
+  
+  /* for each article */
+
+    /* get the article id */
+
+    /* find the title element */
+
+    /* get the title from the title element */
+
+    /* create HTML of the link */
+
+    /* insert link into titleList */
+
+}
+
+generateTitleLinks();
+
 }
