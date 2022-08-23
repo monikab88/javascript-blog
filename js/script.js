@@ -81,4 +81,3 @@ titleList.innerHTML = html;
 }
 }
 generateTitleLinks();
-
