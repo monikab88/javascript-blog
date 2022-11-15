@@ -191,7 +191,7 @@ function generateAutors(){
   
   
   for(const article of articles){
-    const authorSpace=article.querySelector(optArticleAuthorSelector);
+    const authorSpace=article.querySelectorAll(optArticleAuthorSelector);
     const author=article.getAttribute('data-author');
     authorSpace.innerHTML=`<p class="post-author">by <a href="#author-${author}">${author}</a></p>`
     if(allAuthors[author]){
