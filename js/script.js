@@ -169,7 +169,7 @@ function tagClickHandler(event) {
 function addClickListenersToTags() {
   /* find all links to tags */
 
-  let links = document.querySelector('a');
+  let links = document.querySelectorAll('a');
 
   /* START LOOP: for each link */
   for(let link of links)
