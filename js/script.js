@@ -52,6 +52,7 @@ const optArticleSelector = '.post',
   optTitleSelector = '.post-title',
   optTitleListSelector = '.titles',
   optArticleTagsSelector = '.post-tags .list';
+  optArticleAuthorSelector = '.post-author';
 
 function generateTitleLinks(customSelector = '') {
 
