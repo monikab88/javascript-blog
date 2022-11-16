@@ -107,6 +107,7 @@ function generateTags() {
     console.log(articleTagsArray);
     /* START LOOP: for each tag */
     for (let tag of articleTagsArray) {
+      console.log(tag);
       /* generate HTML of the link */
       let linkHTML = '<li><a href="#tag-' + tag + '">' + tag + '</a></li>';
       /* add generated code to html variable */
