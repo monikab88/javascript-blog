@@ -76,6 +76,7 @@ function generateTitleLinks(customSelector = '') {
     html = html + linkHTML;
   }
   titleList.innerHTML = html;
+  
   const links = document.querySelectorAll('.titles a');
 
   for (let link of links) {
@@ -86,24 +87,24 @@ function generateTitleLinks(customSelector = '') {
 generateTitleLinks();
 
 function generateTags() {
-  /* find all articles */
-  const allTags = {};
+
   const articles = document.querySelectorAll(optArticleSelector);
 
   console.log(articles);
 
-  /* START LOOP: for every article: */
-  for (const artictle of articles) {
+  /* [DONE] START LOOP: for every article: */
+  for (let artictle of articles) {
 
-    /* find tags wrapper */
-    const tags = artictle;
+    /* [DONE] find tags wrapper */
+    const tagList = article.querySelector(optArticleTagsSelector);
 
-    /* make html variable with empty string */
+    /* [DONE] make html variable with empty string */
     let html = '';
-    /* get tags from data-tags attribute */
-    const articleTags = artictle.getAttribute('data-tags');
+    /* [DONE] get tags from data-tags attribute */
+     const articleTags = artictle.getAttribute('data-tags');
     /* split tags into array */
     const articleTagsArray = articleTags.split(' ');
+    console.log(articleTagsArray);
     /* START LOOP: for each tag */
     for (let tag of articleTagsArray) {
       /* generate HTML of the link */
