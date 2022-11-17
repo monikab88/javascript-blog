@@ -169,36 +169,43 @@ function addClickListenersToTags() {
 
   const tagLinks = document.querySelectorAll('a[href^="#tag-"]');
 
-  /* START LOOP: for each link */
+  /* [DONE] START LOOP: for each link */
   for(let tagLink of tagLinks)
   {
-  /* add tagClickHandler as event listener for that link */
+  /* [DONE] add tagClickHandler as event listener for that link */
     tagLink.addEventListener('click',tagClickHandler);
 
-  /* END LOOP: for each link */
+  /* [DONE] END LOOP: for each link */
   }
 }
 
 addClickListenersToTags();
 
 function generateAutors(){
-  const allAuthors={}
-
+/* [DONE] find all articles */
   const articles=document.querySelectorAll(optArticleSelector);
+/* [DONE] START LOOP: for every article: */
   
+  for(let article of articles){
+/* [DONE] find author wrapper */
+    const postAuthor=article.querySelector(optArticleAuthorSelector);
+/* [DONE] make html variable with empty string */
+  let html =  '';
+/* [DONE] get author name from data-author attribute */
+    const authorName=article.getAttribute('data-author');
+/* [DONE] generate HTML of the link */
+const linkHTML = '<a href="#author-' + authorName + '"><span>by ' + authorName + '</span></a>';
   
-  for(const article of articles){
-    const authorSpace=article.querySelectorAll(optArticleAuthorSelector);
-    const author=article.getAttribute('data-author');
-    authorSpace.innerHTML=`<p class="post-author">by <a href="#author-${author}">${author}</a></p>`
-    if(allAuthors[author]){
-      allAuthors[author]++;
-    }
-    else{
-      allAuthors[author]=1;
-    }
+/* [DONE] add generated code to HTML variable */
+  
+html= html + linkHTML;
+          
+/* [DONE] insert HTML of the author */
+      
+postAuthor.innerHTML = html;
+  
+/* [DONE] END LOOP: for every article: */
   }
-
 }
 
 generateAutors();
