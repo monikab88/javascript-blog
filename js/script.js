@@ -116,14 +116,13 @@ function generateTags() {
       /* [DONE] add generated code to html variable */
       html = html + linkHTML;
       /* [NEW] check if this link is NOT already in allTags */
-      if(!allTags.[tag]){
+      if(!allTags[tag]){
         /* [NEW] add tag to allTags object */
         allTags[tag] = 1;
       } else {
-        /*allTags[tag]++;*/ 
-        console.log (allTags);
+        allTags[tag]++; 
       }
-      }
+      
       /* [DONE] END LOOP: for each tag */
     }
     /* [DONE] insert HTML of all the links into the tags wrapper */
@@ -135,6 +134,7 @@ function generateTags() {
 
   /* [NEW] add html from allTags to tagList */
   tagList.innerHTML = allTags.join(' ');
+  console.log (allTags);
   
 }
 
