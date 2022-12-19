@@ -258,7 +258,7 @@ function generateAutors(){
     const author=article.getAttribute('data-author');
     console.log (author);
     /* [DONE] generate HTML of the link */
-    const linkHTML = '<a href="#author-' + author + '"><span>by ' + author + '</span></a>';
+    const linkHTML = '<a href="#author-' + author + '"> <span>' + author + '</span></a>';
   
     /* [DONE] add generated code to HTML variable */
   
@@ -273,6 +273,7 @@ function generateAutors(){
     allAuthors[author] = 1;
   } else {
     allAuthors[author]++;
+  }
     /* [DONE] END LOOP: for every article: */
   }
   /* [NEW] find list of tags in right column */
@@ -349,5 +350,5 @@ function addClickListenersToAuthors(){
 
   }
 }
-}
+
 addClickListenersToAuthors();
