@@ -93,9 +93,9 @@ generateTitleLinks();
 function calculateTagsParams (tags) {
   const params = {min: '999999', max: '0'};
 
-  let (tag in tags){
+  for (let tag in tags) {
     console.log(tag + ' is used ' + tags[tag] + 'times');
-
+  
     if(tags[tag] > params.max){
       params.max = tags[tag];
     }
