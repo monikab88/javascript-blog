@@ -55,7 +55,7 @@ const optArticleSelector = '.post',
 const optArticleAuthorSelector = '.post-author';
 const optTagsListSelector = '.tags.list',
   optCloudClassCount = '5',
-  optCloudClassPrefix = 'tag-size-',
+  optCloudClassPrefix = '.tag-size-',
   optAuthorsListSelector = '.authors.list';
 
 function generateTitleLinks(customSelector = '') {
