@@ -73,7 +73,7 @@ body {
 }
 
 .list-horizontal li {
-  display: inline-block;
+  display: inline-flex;
 }
 
 /* Authors */
@@ -94,7 +94,7 @@ body {
 }
 
 .post-tags {
-  display: inline;
+  display: inline-flex;
 }
 .post-tags p {
   margin: 0 10px 0 0;
