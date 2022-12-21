@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #fff;
+  background: 0#fff;
   font-family: "Source Sans Pro", sans-serif;
   color: #444;
   font-weight: 300;
@@ -73,7 +73,7 @@ body {
 }
 
 .list-horizontal li {
-  display: inline;
+  display: inline-block;
 }
 
 /* Authors */
@@ -98,6 +98,11 @@ body {
 }
 .post-tags p {
   margin: 0 10px 0 0;
+}
+
+/*Tags*/
+.tags li {
+  display: inline-block;
 }
 .tag-size-1 {
   font-size: 100%;
